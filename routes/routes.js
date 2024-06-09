@@ -125,7 +125,7 @@ router.delete("/deletepopup/:id", popupUpload, DELETE_POPUP);
 
 //GALLERY
 router.post("/addgallery", galleryUpload, POST_GALLERY);
-router.get("/getgallery", GET_GALLERY);
+router.get("/getgallery/", GET_GALLERY);
 router.get("/getupdategallery/:id", GET_UPDATEGALLERY);
 router.put("/updategallery/:id", galleryUpload, PUT_GALLERY);
 router.delete("/deletegallery/:id", DELETE_GALLERY);

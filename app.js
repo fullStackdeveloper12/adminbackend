@@ -4,7 +4,6 @@ const PORT = 5000;
 import mongoose from "mongoose";
 import { router } from "./routes/routes.js";
 import { configureMiddleware } from "./middleware/configureMiddleware.js";
-import formidable from "express-formidable";
 // Define the CORS options
 const corsOptions = {
   credentials: true,
@@ -12,8 +11,6 @@ const corsOptions = {
 };
 
 configureMiddleware(app);
-// app.use(formidable());
-
 //Starting server And Connecting to DB
 mongoose
   .connect("mongodb+srv://shubham:xyzshubham@cluster0.5rx8bqa.mongodb.net/", {
